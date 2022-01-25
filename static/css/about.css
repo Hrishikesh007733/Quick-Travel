@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ 
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .inner{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-bottom: 4px solid #fff;
+    border-top: 4px solid #fff; 
+
+}
+.container .inner .text{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+create table `travello_pessanger_detail`(`Trip_id` int(11) NOT NULL,
+ `Trip_same_id`int(11) NOT NULL, 
+ `first_name`varchar(200) NOT NULL, 
+ `last_name`varchar(200) NOT NULL, 
+ `age`int(11) NOT NULL, 
+ `username`varchar(200) NOT NULL, 
+ `Trip_date`date NOT NULL,
+ `payment`int(11) NOT NULL,  
+ `city`varchar(200) NOT NULL,
+ `pay_done`int(11) NOT NULL);
+ 
+ INSERT INTO `travello_pessanger_detail` (`Trip_id`, `Trip_same_id`, `first_name`, `last_name`, `age`, `username`, `Trip_date`, `payment`, `city`, `pay_done`) VALUES
+(1, 1, 'hrishiaye', 'b',20,'1234567891','2022-01-16',059,'Dubai',0),
+(2, 2, 'hri', 'a',21,'1234567893','2022-01-20',022,'italy',0),
+(3, 3, 'aye', 'a',21,'1234567892','2022-01-20',022,'italy',0);
+
+ALTER TABLE `travello_pessanger_detail`
+  ADD PRIMARY KEY (`Trip_id`);
+  
+ALTER TABLE `travello_pessanger_detail`
+  MODIFY `Trip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  
+COMMIT;
+
+MANAGER TABLE
+
+CREATE TABLE `travello_manager_login` (
+  `username` varchar(100) NOT NULL,
+  `password` varchar(10) NOT NULL
+);
+
+INSERT INTO `travello_manager_login` (`username`, `password`) VALUES
+('Ayesha','Ayesha@01'),
+('Chayanika','Khushi@09');
